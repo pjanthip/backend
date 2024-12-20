@@ -26,11 +26,11 @@
     <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
   </a>
   <ul class="pc-submenu">
-    <li class="pc-item"><a class="pc-link" href="#!"><?= lang($lang.'.menus.default.register') ?></a></li>
-    <li class="pc-item"><a class="pc-link" href="<?=site_url('moderators/checkUser')?>"><?= lang($lang.'.menus.default.check_user') ?></a></li>
-    <li class="pc-item"><a class="pc-link" href="#!"><?= lang($lang.'.menus.default.category_user') ?></a></li>
-    <li class="pc-item"><a class="pc-link" href="<?=site_url('moderators/usersList')?>"><?= lang($lang.'.page.title.user_list') ?></a></li>
-    <li class="pc-item"><a class="pc-link" href="<?=site_url('moderators/listLogs')?>"><?= lang($lang.'.menus.default.user_logs') ?></a></li>
+    <li class="pc-item"><a class="pc-link <?=($page === "moderators_register_user")? "text-primary":"";?>" href="<?=site_url('moderators/registerUser')?>"><?= lang($lang.'.menus.default.register') ?></a></li>
+    <li class="pc-item"><a class="pc-link <?=($page === "moderators_check_user")? "text-primary":"";?>" href="<?=site_url('moderators/checkUser')?>"><?= lang($lang.'.menus.default.check_user') ?></a></li>
+    <li class="pc-item"><a class="pc-link text-warning" href="#!"><?= lang($lang.'.menus.default.category_user') ?></a></li>
+    <li class="pc-item"><a class="pc-link <?=($page === "moderators_user_list")? "text-primary":"";?>" href="<?=site_url('moderators/usersList')?>"><?= lang($lang.'.menus.default.user_list') ?></a></li>
+    <li class="pc-item"><a class="pc-link <?=($page === "moderators_user_logs")? "text-primary":"";?>" href="<?=site_url('moderators/listLogs')?>"><?= lang($lang.'.menus.default.user_logs') ?></a></li>
   </ul>
 </li>
 <li class="pc-item pc-hasmenu">

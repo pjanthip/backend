@@ -35,11 +35,9 @@
     </div>
 </div>
 <!-- [ Main Content ] end -->
-
-  <!-- [Page Specific JS] start -->
-  <script type="module">
-    import {DataTable} from "<?= base_url('assets/js/plugins/module.js') ?>"
-    window.dt = new DataTable("#pc-dt-simple");
-  </script>
+<script src="<?=base_url('assets/js/datatable-fixed.js')?>"></script>
+<script>
+    initializeDataTable('pc-dt-simple', '<?= $lang ?>');
+</script>
 
 <?php $this->endSection(); ?>

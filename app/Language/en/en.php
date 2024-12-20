@@ -14,6 +14,7 @@
             'language' => 'Language',
             'website' => 'Website',
             'list' => 'List',
+            'home' => 'Home',
         ],
 
         // Basic Components
@@ -51,6 +52,7 @@
                 'register' => 'Register',
                 'user_logs' => 'User Logs',
                 'check_user' => 'Check User',
+                'user_list' => 'User Lists',
                 'category_user' => 'Category User',
                 'menu' => 'Menu',
                 'menu_setting' => 'Menu Settings',
@@ -218,7 +220,6 @@
                 ],
             ],
             'title' => [
-                'user_list' => 'User Lists',
             ],
             'message' => [
             

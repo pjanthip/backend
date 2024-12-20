@@ -14,6 +14,7 @@
             'language' => '语言',
             'website' => '网站',
             'list' => '列表',
+            'home' => '首页',
         ],
 
         // Basic Components
@@ -52,6 +53,7 @@
                 'register' => '注册',
                 'user_logs' => '用户日志',
                 'check_user' => '检查用户',
+                'user_list' => '用户列表',
                 'category_user' => '用户类别',
                 'menu' => '菜单',
                 'menu_setting' => '菜单设置',
@@ -219,7 +221,6 @@
                 ],
             ],
             'title' => [
-                'user_list' => '用户列表',
             ],
             'message' => [
             
@@ -227,7 +228,6 @@
         ],
 
         'welcome' => 'Welcome to my website!',
-        'home' => 'Home',
         'about' => 'About Us',
         'contact' => 'Contact Us',
 

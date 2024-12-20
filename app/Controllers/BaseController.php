@@ -125,6 +125,13 @@ abstract class BaseController extends Controller
         }
     }
 
+    public function checkLoginStatus()
+    {
+        if (!$this->isLoggedIn()) {
+            return redirect()->to('/auth');
+        }
+    }
+
     public function getSystemMenu($is_admin)
     {
         $this->db = Database::connect();
