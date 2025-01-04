@@ -36,3 +36,33 @@ function popup_toast(position_ , icon_ , title_){
         title: title_
       });
 }
+
+async function copyToClipboard(copyText) {
+  var style = document.createElement("style");
+  style.innerHTML = `
+          div:where(.swal2-icon) {
+              margin: 0 auto 0 !important;
+          }
+          .swal2-popup.swal2-toast .swal2-title {
+              padding-top: 5px !important;
+          }
+      `;
+  document.head.appendChild(style);
+
+  let response;
+
+  try {
+    await navigator.clipboard.writeText(copyText);
+    response = {
+      status: true,
+      icon: 'success'
+    };
+  } catch (err) {
+    response = {
+      status: false,
+      icon: 'error'
+    };
+  }
+
+  return response;
+}

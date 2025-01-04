@@ -28,7 +28,8 @@
                     <label class="form-label" for="user_type">User Type</label>
                     <select class="form-select" id="user_type" required>
                         <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                        <option value="moderators">Moderators</option>
+                        <option value="administrator">Administrator</option>
                     </select>
                     <div class="invalid-tooltip"> Please select a User Type. </div>
                   </div>
@@ -56,6 +57,24 @@
                                     <?= lang($lang . '.page.authentication.register.agree_terms_text3'); ?>
                                 </label>
                     <div class="invalid-feedback"> You must agree before submitting. </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row bg-orange-100 py-4 mb-3 rounded">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="user_type">Account Status</label>
+                    <select class="form-select" id="user_type" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option class="text-warning" value="0">Pending</option>
+                        <option class="text-success" value="1">Active</option>
+                        <option class="text-primary" value="2">Paused</option>
+                        <option class="text-danger" value="3">Banned</option>
+                    </select>
+                    <div class="invalid-tooltip"> Please select a User Type. </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="create_by">ลงทะเบียนโดย</label>
+                    <input type="text" class="form-control" id="create_by" value="<?= session()->get('full_name'); ?>" disabled>
                   </div>
                 </div>
                 <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i> <?=lang($lang.'.components.buttons.btn_save')?></button>

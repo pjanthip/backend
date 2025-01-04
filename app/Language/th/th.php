@@ -15,6 +15,7 @@
             'website' => 'เว็บไซต์',
             'list' => 'รายการ',
             'home' => 'หน้าแรก',
+            'refresh' => 'รีเฟรช',
         ],
 
         // Basic Components
@@ -28,18 +29,24 @@
                 'btn_cancel' => 'ยกเลิก',
                 'btn_accept' => 'ยอมรับ',
                 'btn_search' => 'ค้นหา',
+                'btn_reset' => 'รีเซ็ต',
+                'btn_edit' => 'แก้ไข',
             ],
             'title' => [
             ],
             'message' => [
-            
+                'copy_success' => 'คัดลอกสำเร็จ',
+                'copy_fail' => 'คัดลอกไม่สำเร็จ',
+                'required_fields' => 'กรุณากรอกข้อมูลในฟิลด์ที่จำเป็นอย่างใดอย่างหนึ่ง',
             ],
         ],
 
         // Reponse
         'response' => [
             'message' => [
-            
+                'searching' => 'กำลังค้นหา',
+                'no_data_found' => 'ไม่พบข้อมูล',
+                'data_found' => 'พบข้อมูล',
             ]
         ],
 
@@ -135,8 +142,32 @@
         'page' => [
             'dashboard' => [
                 'defualt' => [
-                
                 ]
+            ],
+            'usersList' => [
+                'name' => 'ชื่อ',
+                'status' => 'สถานะ',
+                'type' => 'ประเภท',
+            ],
+            'searchUser' => [
+                'user_Information' => 'ข้อมูลผู้ใช้',
+                'new_password' => 'รหัสผ่านใหม่',
+                'current_password' => 'รหัสผ่านปัจจุบัน',
+                'cannot_remember' => 'ลืมรหัสผ่านปัจจุบัน?',
+                'reset_your_password' => 'รีเซ็ตรหัสผ่านของคุณ',
+                'save_password' => 'บันทึกรหัสผ่าน',
+                'your_email_address' => 'ที่อยู่อีเมลของคุณคือ',
+                'no_access_right' => 'ไม่มีสิทธิ์การเข้าถึง',
+                'activity_logs' => 'บันทึกกิจกรรม',
+                'account_status' => 'สถานะบัญชี',
+                'delete_account' => 'ลบบัญชี',
+                'delete_your_text1' => 'คุณต้องการลบบัญชีของคุณหรือไม่?',
+                'delete_your_text2' => 'การลบบัญชีของคุณจะลบข้อมูลทั้งหมดที่เกี่ยวข้อง',
+                'provide_at_least' => 'กรุณากรอกข้อมูลการค้นหาอย่างน้อยหนึ่งรายการ',
+                'error_occurred' => 'เกิดข้อผิดพลาดขณะส่งข้อมูล',
+                'result' => 'ผลลัพธ์',
+                'number_of_found' => 'จำนวนผู้ใช้ที่พบ',
+                'user_type' => 'ประเภทผู้ใช้',
             ],
             'authentication' => [
                 'signin' => [

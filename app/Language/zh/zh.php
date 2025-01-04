@@ -15,6 +15,7 @@
             'website' => '网站',
             'list' => '列表',
             'home' => '首页',
+            'refresh' => '刷新',
         ],
 
         // Basic Components
@@ -28,19 +29,25 @@
                 'btn_cancel' => '取消',
                 'btn_accept' => '接受',
                 'btn_search' => '搜索',
+                'btn_reset' => '重置',
+                'btn_edit' => '编辑',
             ],
             'title' => [
             
             ],
             'message' => [
-            
+                'copy_success' => '复制成功',
+                'copy_fail' => '复制失败',
+                'required_fields' => '请填写至少一个必填字段。',
             ],
         ],
 
         // Reponse
         'response' => [
             'message' => [
-            
+                'searching' => '正在搜索',
+                'no_data_found' => '未找到数据',
+                'data_found' => '找到数据',
             ]
         ],
 
@@ -139,6 +146,31 @@
                 'defualt' => [
                 
                 ]
+            ],
+            'usersList' => [
+                'name' => '名字',
+                'status' => '状态',
+                'type' => '类型',
+            ],
+            'searchUser' => [
+                'user_Information' => '用户信息',
+                'new_password' => '新密码',
+                'current_password' => '当前密码',
+                'cannot_remember' => '忘记当前密码了吗？',
+                'reset_your_password' => '重设密码',
+                'save_password' => '保存密码',
+                'your_email_address' => '您的电子邮件地址是',
+                'no_access_right' => '无访问权限',
+                'activity_logs' => '活动日志',
+                'account_status' => '账户状态',
+                'delete_account' => '删除账户',
+                'delete_your_text1' => '您想删除您的账户吗？',
+                'delete_your_text2' => '删除您的账户将删除与其关联的所有内容。',
+                'provide_at_least' => '请提供至少一个搜索词',
+                'error_occurred' => '提交数据时发生错误。',
+                'result' => '结果',
+                'number_of_found' => '找到的用户数量',
+                'user_type' => '用户类型',
             ],
             'authentication' => [
                 'signin' => [

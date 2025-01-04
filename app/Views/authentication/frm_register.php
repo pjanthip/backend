@@ -216,7 +216,7 @@
                         Swal.fire({
                             title: response.message,
                             icon: "success",
-                            confirmButtonText: "<?= lang($lang . '.components.buttons.back_to_login'); ?>",
+                            confirmButtonText: "<?= lang($lang . '.page.authentication.register.back_to_login'); ?>",
                             cancelButtonText: "<?= lang($lang . '.components.buttons.btn_close'); ?>",
                             showCancelButton: true,
                             allowOutsideClick: false

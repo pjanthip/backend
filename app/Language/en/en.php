@@ -15,6 +15,7 @@
             'website' => 'Website',
             'list' => 'List',
             'home' => 'Home',
+            'refresh' => 'Refresh',
         ],
 
         // Basic Components
@@ -28,18 +29,24 @@
                 'btn_cancel' => 'Cancel',
                 'btn_accept' => 'Accept',
                 'btn_search' => 'Search',
+                'btn_reset' => 'Reset',
+                'btn_edit' => 'Edit',
             ],
             'title' => [
             ],
             'message' => [
-            
+                'copy_success' => 'Copy successful',
+                'copy_fail' => 'Copy failed',
+                'required_fields' => 'Please fill in at least one of the required fields.',
             ],
         ],
 
         // Reponse
         'response' => [
             'message' => [
-            
+                'searching' => 'Searching',
+                'no_data_found' => 'No data found.',
+                'data_found' => 'Data found',
             ]
         ],
 
@@ -138,6 +145,31 @@
                 'defualt' => [
                 
                 ]
+            ],
+            'usersList' => [
+                'name' => 'Name',
+                'status' => 'Status',
+                'type' => 'Type',
+            ],
+            'searchUser' => [
+                'user_Information' => 'User Information',
+                'new_password' => 'New Password',
+                'current_password' => 'Current Password',
+                'cannot_remember' => 'Can’t Remember your current password?',
+                'reset_your_password' => 'Reset your password',
+                'save_password' => 'Save Password',
+                'your_email_address' => 'Your email address is',
+                'no_access_right' => 'No Access right',
+                'activity_logs' => 'Activity Logs',
+                'account_status' => 'Account Status',
+                'delete_account' => 'Delete Account',
+                'delete_your_text1' => 'Would you like to delete your account?',
+                'delete_your_text2' => 'Deleting your account will remove all the content associated with it.',
+                'provide_at_least' => 'Please provide at least one search term.',
+                'error_occurred' => 'Error occurred while submitting the data.',
+                'result' => 'Result',
+                'number_of_found' => 'Number of users found',
+                'user_type' => 'User Type',
             ],
             'authentication' => [
                 'signin' => [

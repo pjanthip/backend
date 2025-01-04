@@ -54,6 +54,9 @@ $routes->get('/logout', 'Authentication::logout');
 
 
 $routes->get('/moderators/(:segment)', 'Administrator\Moderators::${1}');
+$routes->post('/moderators/(:segment)', 'Administrator\Moderators::${1}');
+$routes->get('/moderators/(:segment)', 'Administrator\Moderators::${1}');
+$routes->post('/moderators/(:segment)', 'Administrator\Moderators::${1}');
 // $routes->get('/admin/(:segment)/(:segment)/(:segment)', 'Administrator\${1}::${2}/$3');
 // $routes->post('/admin/(:segment)/(:segment)', 'Administrator\${1}::${2}');
 // $routes->post('/admin/(:segment)/(:segment)/(:segment)', 'Administrator\${1}::${2}/$3');

@@ -5,9 +5,15 @@
     <div class="row align-items-center">
       <div class="col-md-12">
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="<?=site_url()?>"><?=lang($lang.'.static.home')?></a></li>
-          <li class="breadcrumb-item"><a href="javascript: void(0)"><?= $breadcrumb_item ?></a></li>
-          <li class="breadcrumb-item" aria-current="page"><?= $head_title ?></li>
+          <?php
+            foreach ($breadcrumb as $item) {
+              if ($item['url']) {
+                echo '<li class="breadcrumb-item"><a href="' . $item['url'] . '">' . $item['title'] . '</a></li>';
+              } else {
+                echo '<li class="breadcrumb-item" aria-current="page">' . $item['title'] . '</li>';
+              }
+            }
+          ?>
         </ul>
       </div>
       <div class="col-md-12">

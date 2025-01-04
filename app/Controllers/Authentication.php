@@ -74,13 +74,13 @@ class Authentication extends BaseController {
                 if($user->user_status != 1){
                     $message = '';
                     switch($user->user_status){
-                        case 0 : $message = lang($this->lang . '.account_status_pending');
+                        case 0 : $message = lang($this->lang . '.page.authentication.register.account_status_pending');
                                  break;
-                        case 2 : $message = lang($this->lang . '.account_status_paused');
+                        case 2 : $message = lang($this->lang . '.page.authentication.register.account_status_paused');
                                  break;
-                        case 3 : $message = lang($this->lang . '.account_status_banned');
+                        case 3 : $message = lang($this->lang . '.page.authentication.register.account_status_banned');
                                  break;
-                        default : $message = lang($this->lang . '.account_status_active');
+                        default : $message = lang($this->lang . '.page.authentication.register.account_status_active');
                     };
                     $json = json_encode(array(
                         'status' => FALSE,

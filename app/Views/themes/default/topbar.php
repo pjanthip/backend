@@ -23,6 +23,11 @@
     <div class="ms-auto">
       <ul class="list-unstyled">
         <li class="dropdown pc-h-item">
+          <a class="text-secondary" href="javascript:location.reload();" role="button">
+            <i class="fas fa-redo"></i> <?=lang($lang.'.static.refresh')?>
+          </a>
+        </li>
+        <!-- <li class="dropdown pc-h-item">
           <svg class="pc-icon me-1">
             <use xlink:href="#custom-box-1"></use>
           </svg>
@@ -74,7 +79,7 @@
               <?php endif;endif;?>
             <?php endforeach; ?>
           </div>
-        </li>
+        </li> -->
         <li class="dropdown pc-h-item">
           <a
             class="pc-head-link dropdown-toggle arrow-none me-0"

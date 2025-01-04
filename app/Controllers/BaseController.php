@@ -52,6 +52,7 @@ abstract class BaseController extends Controller
     protected $db;
     protected $lang;
     protected $system_locate;
+    protected $data;
 
     public function __construct()
     {
@@ -174,5 +175,41 @@ abstract class BaseController extends Controller
         return $data;
 
         //return (session()->has('is_administrator') && session()->get('is_administrator') === true)? true:false;
+    }
+
+    public function check_first($is_auth, $head_title, $breadcrumb, $page){
+        if($is_auth){
+            if (!$this->is_logged_in) return redirect()->to('/auth');
+        }
+
+        $this->data = [
+            'lang' => $this->lang,
+            'head_title' => $head_title,
+            'breadcrumb' => $breadcrumb,
+            'page' => $page,
+            'systems' => $this->getSystemMenu($this->is_admin['is_admin']),
+            'is_admin' => $this->is_admin
+        ];
+        //var_dump($this->data);
+        if ($this->data === null) {
+            return redirect()->to('/auth');
+        }
+
+    }
+
+    public function generateBreadcrumb($items)
+    {
+        $breadcrumb = [
+            ['title' => lang($this->lang.'.static.home'), 'url' => site_url()],
+        ];
+
+        foreach ($items as $item) {
+            $breadcrumb[] = [
+                'title' => $item['title'],
+                'url' => isset($item['url']) ? $item['url'] : ''
+            ];
+        }
+
+        return $breadcrumb;
     }
 }
